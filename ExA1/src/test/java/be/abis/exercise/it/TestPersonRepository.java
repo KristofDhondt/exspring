@@ -5,9 +5,9 @@ import static org.junit.Assert.assertEquals;
 import org.junit.Before;
 import org.junit.Test;
 
-import be.abis.exercise.model.Person;
-import be.abis.exercise.repository.FilePersonRepository;
-import be.abis.exercise.repository.PersonRepository;
+import model.Person;
+import repository.FilePersonRepository;
+import repository.PersonRepository;
 
 public class TestPersonRepository {
 	

@@ -1,9 +1,9 @@
-package be.abis.exercise.repository;
+package repository;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import be.abis.exercise.model.Course;
+import model.Course;
 
 public class MemoryCourseRepository implements CourseRepository {
 	

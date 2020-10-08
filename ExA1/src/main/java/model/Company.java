@@ -1,4 +1,4 @@
-package be.abis.exercise.model;
+package model;
 
 public class Company{
 	

@@ -5,8 +5,8 @@ import static org.junit.Assert.assertEquals;
 import org.junit.Before;
 import org.junit.Test;
 
-import be.abis.exercise.repository.CourseRepository;
-import be.abis.exercise.repository.MemoryCourseRepository;
+import repository.CourseRepository;
+import repository.MemoryCourseRepository;
 
 public class TestCourseRepository {
 	

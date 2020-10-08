@@ -1,9 +1,9 @@
-package be.abis.exercise.repository;
+package repository;
 
 import java.io.IOException;
 import java.util.ArrayList;
 
-import be.abis.exercise.model.Person;
+import model.Person;
 
 public interface PersonRepository {
 	

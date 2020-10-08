@@ -1,8 +1,8 @@
-package be.abis.exercise.repository;
+package repository;
 
 import java.util.List;
 
-import be.abis.exercise.model.Course;
+import model.Course;
 
 public interface CourseRepository {
 
