@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Welcome</title>
+</head>
+<body>
+	<h1>Welcome <span th:text="${person.firstName}"/>!</h1>  
+
+<div>
+	   What do you want to do next?
+	   <ul>
+	     <li> <a href="http://localhost/training/searchcourse">Search for courses</a> </li>
+	     <li> <a href="http://localhost/training/personadmin">Person administration</a> </li>
+	   </ul>	
+	</div>
+	
+	<form action="#" th:action="@{/logout}" method="get">
+	<span style="text-align:right"><input type="submit" th:value="Logout"/></span>
+	</form>	
+</body>
+</html>
+
