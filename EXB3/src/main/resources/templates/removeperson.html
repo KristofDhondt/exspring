@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Remove person</title>
+</head>
+<body>
+<h1>Remove person by id :</h1>
+
+	<form action="#" th:action="@{/removePersonById}" th:object="${person}" method="post">
+		<table>
+			<tr>
+				<td>Person Id:</td>
+				<td><input type="text" th:field="*{personId}" /></td>
+			</tr>
+		</table>
+		<input type="submit" value="Remove" />		
+	</form>
+	
+</body>
+</html>

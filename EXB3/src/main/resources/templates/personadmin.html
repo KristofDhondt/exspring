@@ -6,19 +6,17 @@
 <title>Person Administration</title>
 </head>
 <body>
-<div>
-	   What do you want to do next?
-	 	    <ul>
-	     <a href="http://localhost:8085/training/changepassword">Change password</a> </li> 
-	     <li> <a href="http://localhost:8085/training/searchforpersons">Search for persons</a> </li>
-	     <li> <a href="http://localhost:8085/training/addnewperson">Add a new person</a> </li>
+<h1>Person Administration</h1>
+	<ul>
+	     <li> <a href="http://localhost:8085/training/changepassword">Change password</a> </li>
+	     <li> <a href="http://localhost:8085/training/searchperson">Search for persons</a> </li>
+	     <li> <a href="http://localhost:8085/training/addperson">Add a new person</a> </li>
 	     <li> <a href="http://localhost:8085/training/removeperson">Remove a person</a> </li>
-	   </ul>	
-	</div>
-	
-	<form action="#" th:action="@{/personadmin}" method="get">
+	 </ul>	
+	<form action="#" th:action="@{/welcome}" method="get">
 	<span style="text-align:right"><input type="submit" th:value="Back"/></span>
 	</form>	
 	
 </body>
 </html>
+

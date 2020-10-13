@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Show persons</title>
+</head>
+<body>
+<h1>Show Persons:</h1>
+	<table border="1">
+		<thead>
+			<tr>
+				<th>First Name</th>
+				<th>Last Name</th>
+				<th>Age</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr th:each="persons : ${persons}">
+				<td th:text="${person.firstName}"></td>
+				<td th:text="${person.lastName}"></td>
+				<td th:text="${person.age}"></td>
+			</tr>
+		</tbody>
+	</table>
+
+	<form action="#" th:action="@{/personadmin}" method="get">
+		<span style="text-align:right"><input type="submit" th:value="Back" /></span>
+	</form>
+
+</body>
+</html>
