@@ -92,7 +92,7 @@ public class AppController {
 		return "redirect:/";
 	}
 		
-	@PostMapping("/changepassword")
+	@PostMapping("/changePassword")
 	public String postChangePassword(Model model, Person person) {
 		try {
 			trainingService.changePassword(loggedInUser, person.getPassword());			
@@ -124,7 +124,9 @@ public class AppController {
 	public String findPersonById(Person person){
 		Person personById = trainingService.findPerson(person.getPersonId());	
 		listPersons = new ArrayList<Person>();
-		listPersons.add(personById);
+		if (personById != null) {
+			listPersons.add(personById);
+		}	
 		return "redirect:/showpersons";
 	}
 }
