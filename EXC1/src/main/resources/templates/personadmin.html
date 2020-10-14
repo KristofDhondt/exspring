@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Person Administration</title>
+</head>
+<body>
+<h1>Person Administration</h1>
+	<ul>
+	     <li> <a href="http://localhost:8085/training/changepassword">Change password</a> </li>
+	     <li> <a href="http://localhost:8085/training/searchperson">Search for persons</a> </li>
+	     <li> <a href="http://localhost:8085/training/addperson">Add a new person</a> </li>
+	     <li> <a href="http://localhost:8085/training/removeperson">Remove a person</a> </li>
+	 </ul>	
+	<form action="#" th:action="@{/welcome}" method="get">
+	<span style="text-align:right"><input type="submit" th:value="Back"/></span>
+	</form>	
+	
+</body>
+</html>
+
